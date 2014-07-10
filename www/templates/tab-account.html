@@ -1,0 +1,12 @@
+<ion-view title="Octopus">
+  <ion-content class="has-header padding octopusContainer">
+
+
+      <img src="/img/octopus.png"/>
+
+      <div class="eventTime" ng-class="{red: lastTask.State  === 'Failed'}">
+          {{ lastTask.State }}
+      </div>
+
+  </ion-content>
+</ion-view>

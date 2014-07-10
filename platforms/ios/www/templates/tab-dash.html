@@ -1,0 +1,9 @@
+<ion-view title="Build Events">
+  <ion-content class="has-header padding">
+      <div ng-repeat="event in events.Items">
+          <div class="eventTime" ng-class="{red : event.State === 'Failed'}" > {{ event.Completed | date:'medium' }} </div>
+          <div class="eventMessage"> {{ event.Description }} </div>
+          <br>
+      </div>
+  </ion-content>
+</ion-view>

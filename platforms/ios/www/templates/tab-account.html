@@ -1,0 +1,13 @@
+<ion-view title="Octopus">
+  <ion-content class="has-header padding octopusContainer">
+
+      <img src="/img/octopus.png"/>
+
+      <div ng-if="lastTask.State  === 'Success'">
+          HAPPY
+      </div>
+      <div ng-if="lastTask.State  === 'Failed'">
+          SAD
+      </div>
+  </ion-content>
+</ion-view>
