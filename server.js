@@ -22,6 +22,7 @@ app.use(function(req, res, next) {
     res.setHeader("AnyHeader", "*");
     return next();
 });
+
 app.use(express.static(__dirname + '/www'));
 
 //io.on('connection', function (socket) {
